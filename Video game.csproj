@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92A4F933-0643-49DE-B24E-451B5395930E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Video_game</RootNamespace>
+    <AssemblyName>Video game</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Felicitarics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Felicitarics.Designer.cs">
+      <DependentUpon>Felicitarics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Final1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Final1.Designer.cs">
+      <DependentUpon>Final1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generic.Designer.cs">
+      <DependentUpon>Generic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Felicitarics.resx">
+      <DependentUpon>Felicitarics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Final1.resx">
+      <DependentUpon>Final1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generic.resx">
+      <DependentUpon>Generic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext429104566533659.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext429104746456055.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e0493044451489424e5758c969a95f9a.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grass.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iarba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stone tile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pocahontas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NicePng_knight-png_4332514.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toppng.com-dragon-celeste-dragon-city-498x384.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toppng.com-dragon-city-burning-dragon-401x141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toppng.com-horseshoe-png-3202x3156.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext431100421232157.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NicePng_knight-png_4332514reverse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toppng.com-040114-dungeon-keeper-traps-and-doors-door-home-door-417x481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toppng.com-rincesas-disney-list-of-disney-princesses-disney-disney-princess-redesign-pocahontas-304x772.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NicePng_knight-png_4332514reverse1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NicePng_knight-png_4332514reversesus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext433434012397363 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLIPLY_372109170_FREE_FIREWORKS_400 %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragonreverse.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
